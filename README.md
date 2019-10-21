@@ -9,9 +9,13 @@
 
 ### The basic steps in the pipeline are following
 
+executed by `run_bbh.sh`
+
 0. Prepare all data files, including NLR database.
 1. Subtract genes with canonical NLR domains from a plant proteome(s) of interest.
 2. Run blast of a plant proteome(s) against NLRs.
 3. Intersect canonical NLR domains with blast results to filter them out.
 4. Run the reciprocal blast.
 5. Map reciprocal blast hits to KEGG pathways.
+
+re-format results into human readable format with `K-reformat-bbp-table.pl`
